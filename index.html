@@ -1,0 +1,100 @@
+<head>
+  <title>2026届调考成绩查询</title>
+  <meta charset="utf-8">
+<script>
+changeData = function()
+{
+  var class_ = document.querySelector("#class").value;
+  var name = document.querySelector("#name").value;
+  document.getElementById("showclass").innerHTML = class_;
+  document.getElementById("showname").innerHTML = name;
+  var cn = Math.floor(Math.random() * (150 - 0 + 1));
+  var ma = Math.floor(Math.random() * (150 - 0 + 1));
+  var en = Math.floor(Math.random() * (150 - 0 + 1));
+  var ph = Math.floor(Math.random() * (100 - 0 + 1));
+  var ch = Math.floor(Math.random() * (100 - 0 + 1));
+  var bi = Math.floor(Math.random() * (100 - 0 + 1));
+  var hi = Math.floor(Math.random() * (100 - 0 + 1));
+  var pl = Math.floor(Math.random() * (100 - 0 + 1));
+  var ge = Math.floor(Math.random() * (100 - 0 + 1));
+  document.getElementById("cn").innerHTML = cn;
+  document.getElementById("ma").innerHTML = ma;
+  document.getElementById("en").innerHTML = en;
+  document.getElementById("ph").innerHTML = ph;
+  document.getElementById("ch").innerHTML = ch;
+  document.getElementById("bi").innerHTML = bi;
+  document.getElementById("hi").innerHTML = hi;
+  document.getElementById("pl").innerHTML = pl;
+  document.getElementById("ge").innerHTML = ge;
+  var total = cn+ma+en+ph+ch+bi+hi+pl+ge;
+  document.getElementById("total").innerHTML = total;
+  document.getElementById("rank").innerHTML = Math.floor(Math.random() * (600 - 0 + 1));
+  
+}
+</script>
+</head>
+
+
+<body>
+<h1 style="font-family:宋体">2026届调考成绩查询</h1>
+<form>
+  班级：<input type="text" id="class"><br>
+  姓名：<input type="text" id="name"><br>
+</form>
+  <button onclick="changeData()">查询</button>
+
+<hr>
+<table border=2>
+  <tr>
+    <td>班级</td>
+    <td width="100px"><p id="showclass"></p></td>
+  </tr>
+  <tr>
+    <td>姓名</td>
+    <td><p id="showname"></p></td>
+  </tr>
+  <tr>
+    <td>语文</td>
+    <td><p id="cn"></p></td>
+  </tr>
+  <tr>
+    <td>数学</td>
+    <td><p id="ma"></p></td>
+  </tr>
+  <tr>
+    <td>英语</td>
+    <td><p id="en"></p></td>
+  </tr>
+<tr>
+    <td>物理</td>
+    <td><p id="ph"></p></td>
+  </tr>
+<tr>
+    <td>化学</td>
+    <td><p id="ch"></p></td>
+  </tr>
+<tr>
+    <td>生物</td>
+    <td><p id="bi"></p></td>
+  </tr>
+<tr>
+    <td>历史</td>
+    <td><p id="hi"></p></td>
+  </tr>
+<tr>
+    <td>政治</td>
+    <td><p id="pl"></p></td>
+  </tr>
+<tr>
+    <td>地理</td>
+    <td><p id="ge"></p></td>
+  </tr>
+<tr>
+    <td>总分</td>
+    <td><p id="total"></p></td>
+  </tr>
+<tr>
+    <td>排名</td>
+    <td><p id="rank"></p></td>
+  </tr>
+</table>
